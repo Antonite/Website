@@ -17,7 +17,7 @@ p.quote a { color: #FFFFFF; text-decoration: underline; }
 p.quote a:hover { text-decoration: none; }
 
 .homeBackground {
-    background: no-repeat center right fixed url(../app/images/space.jpg);
+    background: no-repeat center right fixed url(../assets/space.jpg);
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
     -o-background-size: 100%; 
@@ -51,7 +51,6 @@ p.quote a:hover { text-decoration: none; }
 .expInfo .exp .exp-details { display: block; margin-top: 6px; }
 .expInfo .exp .exp-details * { color: #22A39F; }
 
-/* .background-space { background: no-repeat center url(../app/images/space.jpg); } */
 .contact { padding-bottom: 200px; }
 .contact .row * { color: black; }
 .contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }

@@ -42,3 +42,5 @@ p.quote a:hover { text-decoration: none; }
 .background-white { background: white; }
 .profile .row > div { margin-bottom: 20px; }
 .profile .row > div img { width: 100%; max-width: 246px; height: auto; }
+
+.profileImage { border-radius: 10%; }

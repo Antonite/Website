@@ -9,6 +9,8 @@ h1, h4 { font-weight: 700; margin-bottom: 10px; font-size: 60px; }
 h2, h3 { font-weight: 300; color: #22A39F; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
+h4 { font-size: 18px; }
+
 
 p.quote { text-align: center; color: #727878; font-size: 22px;}
 p.quote a { color: #FFFFFF; text-decoration: underline; }
@@ -40,7 +42,14 @@ p.quote a:hover { text-decoration: none; }
 
 .container { max-width: 1280px; padding: 40px 180px; }
 .background-white { background: white; }
+.background-gray { background: rgb(230, 230, 230); }
+
 .profile .row > div { margin-bottom: 20px; }
 .profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
 .profileImage { border-radius: 10%; }
+
+.expInfo .exp { margin-bottom: 20px; }
+.expInfo .exp p > strong { display: block; margin-bottom: 10px; }
+.expInfo .exp .exp-details { display: block; margin-top: 6px; }
+.expInfo .exp .exp-details * { color: #22A39F; }

@@ -1,4 +1,4 @@
-#antonite.me
+# antonite.me
 This is the source code of my personal website.
 
 ## How to run

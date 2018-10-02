@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Fjord+One');
+
+.homePageTitle {
+    position: relative;
+    text-align: center;
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2cm;
+    font-family: 'Jura', sans-serif;
+    font-weight: 100;
+}
+
+.homePageQuote {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 0.5cm;
+    font-family: 'Jura', sans-serif;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.navbar {
+    position: relative;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: 0.42cm;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar:hover > a {
+    opacity: 0.5;
+    transition-property: opacity;
+    transition-duration: 170ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.navbar:hover > a:hover {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 170ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+a {
+    text-decoration: none;
+    margin: 1em;
+    color: white;
+}

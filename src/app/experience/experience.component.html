@@ -1,0 +1,22 @@
+<div class="expInfo">
+  <div *ngFor="let experience of data" class="exp row">
+    <div class="col-md-4">
+      <h4>{{experience.name}}</h4>
+      <p class="expTime">
+        {{experience.date}}
+      </p>
+    </div>
+    <div class="col-md-8">
+      <p>
+        <strong>{{experience.position}}</strong>
+        <span>{{experience.description}}</span>
+        <span class="exp-details">
+          <span class="location">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            {{experience.location}}
+          </span>
+        </span>
+      </p>
+    </div>
+  </div>
+</div>

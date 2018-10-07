@@ -5,11 +5,10 @@ html, body { color: #434242; font-family: 'Jura', sans-serif !important; height:
 body { background: white 15px; line-height: 1.64; }
 
 h1, h2, h3, h4, h5, h6 { margin-bottom: 20px; }
-h1, h4 { font-weight: 700; margin-bottom: 10px; font-size: 60px; }
+h1 { font-weight: 700; margin-bottom: 10px; font-size: 60px; }
 h2, h3 { font-weight: 300; color: #22A39F; }
 h2 { font-size: 54px; text-align: center; }
 h3 { font-size: 28px; }
-h4 { font-size: 18px; }
 
 
 p.quote { text-align: center; color: #727878; font-size: 22px;}
@@ -45,11 +44,6 @@ p.quote a:hover { text-decoration: none; }
 .profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
 .profileImage { border-radius: 10%; }
-
-.expInfo .exp { margin-bottom: 20px; }
-.expInfo .exp p > strong { display: block; margin-bottom: 10px; }
-.expInfo .exp .exp-details { display: block; margin-top: 6px; }
-.expInfo .exp .exp-details * { color: #22A39F; }
 
 .contact { padding-bottom: 200px; }
 .contact .row * { color: black; }

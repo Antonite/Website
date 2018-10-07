@@ -45,6 +45,9 @@ p.quote a:hover { text-decoration: none; }
 
 .profileImage { border-radius: 10%; }
 
+.user { font-size: 100px; text-align: center; }
+/* .squares {  } */
+
 .contact { padding-bottom: 200px; }
 .contact .row * { color: black; }
 .contact a { display: block; line-height: 32px; margin-bottom: 20px; opacity: 0.6; filter:alpha(opacity=60);  }

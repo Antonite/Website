@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   aria-hidden="true"
+   data-prefix="far"
+   data-icon="comment"
+   class="svg-inline--fa fa-comment fa-w-16"
+   role="img"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg3725"
+   sodipodi:docname="comment-russian.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata3731">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3729">
+    <font
+       horiz-adv-x="1024"
+       id="font11"
+       inkscape:label="font 1">
+      <font-face
+         units-per-em="1024"
+         id="font-face13"
+         font-family="SVGFont 1" />
+      <missing-glyph
+         d="M0,0h1000v1024h-1000z"
+         id="missing-glyph15" />
+    </font>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     id="namedview3727"
+     showgrid="false"
+     inkscape:zoom="1.2263883"
+     inkscape:cx="55.770955"
+     inkscape:cy="276.67603"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3725" />
+  <path
+     d="M 389.11099,76.455518 C 284.21902,28.069232 154.5781,60.823078 99.498358,149.64453 76.680297,186.44086 70.541707,226.95476 78.195537,265.3806 c -29.9402,25.35881 -65.64102,48.82202 -66.20367,48.96014 -1.15956,1.69526 -14.5139797,9.28893 -14.9626797,10.78623 -0.51,1.70192 5.9487198,8.94993 11.8504398,11.34138 55.5925199,22.52666 88.7002909,24.19426 120.1357729,16.49592 17.07605,16.924 36.34583,33.84879 60.67721,45.07277 104.892,48.38627 234.53291,15.63244 289.61265,-73.189 C 534.385,236.02659 494.00298,124.8418 389.11099,76.455518 Z M 217.98207,402.25402 c -53.48266,-18.90761 -62.92648,-33.08097 -76.88875,-45.87659 l -8.66727,-9.19911 -30.53674,5.47436 C 72.237387,357.35932 0.54111733,333.30383 1.6401673,325.58771 15.391657,318.49515 33.368387,302.32134 56.098687,288.01593 l 30.69096,-21.77952 -3.87789,-7.05205 c -0.34976,-13.86101 -12.27399,-50.83084 20.136513,-104.56135 54.267,-89.964502 180.98324,-117.234209 285.15624,-70.800882 85.72313,38.209602 145.8614,137.150392 86.82117,238.478542 -40.2488,69.07724 -156.42208,115.52587 -257.04361,79.95335 z"
+     id="path3723"
+     inkscape:connector-curvature="0"
+     style="fill:currentColor;stroke-width:0.85876751"
+     sodipodi:nodetypes="ssccsscsssscccccccssss" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:135.4480896px;line-height:1.25;font-family:Gabriola;-inkscape-font-specification:'Gabriola, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.38620782"
+     x="238.45686"
+     y="210.39966"
+     id="text9"
+     transform="scale(0.73614805,1.3584224)"><tspan
+       sodipodi:role="line"
+       id="tspan12"
+       x="238.45686"
+       y="210.39966"
+       style="stroke-width:3.38620782">Russian</tspan></text>
+</svg>

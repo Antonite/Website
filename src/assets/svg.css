@@ -1,0 +1,8 @@
+.commentfill { opacity: 0.5; }
+.commentfill:hover { opacity: 1; fill: red; }
+.wrenchfill { opacity: 0.5; }
+.wrenchfill:hover { opacity: 1; fill: blue; }
+.manleft { opacity: 1; }
+.manleft:hover { opacity: 1; fill: red; }
+.manright { opacity: 1; }
+.manright:hover { opacity: 1; fill: blue; }

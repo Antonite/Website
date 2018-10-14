@@ -44,17 +44,28 @@ p.quote a:hover { text-decoration: none; }
 .profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
 .profileImage { border-radius: 10%; }
-.resize { height: 100%; width: 100%; }
+.resize { height: 100%; width: 100%; max-width: 200px; max-height: 200px;}
 
+.skills { margin-bottom: 40px;}
 .skills div { margin: 0px; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px;}
-.jsSVG { margin-left: 100%; transform: rotate(-10deg); }
-.csharpSVG { margin-left: 100%; margin-top: 100%; transform: rotate(-15deg);}
-.HTML5SVG { margin-left: 100%; transform: rotate(-20deg); }
-.angularSVG { margin-top: -30%; transform: rotate(-10deg); }
-.sqlSVG { margin-top: -190%; margin-left: -30%; transform: rotate(-15deg); }
-.racketSVG { margin-top: -150%; margin-left: -50%; transform: rotate(-20deg); }
-.wpfSVG { margin-left: -50%; transform: rotate(-15deg); }
-.javaSVG { margin-top: 50%; margin-right: -30%; transform: rotate(-10deg); }
+
+.jsSVG { margin-left: 100%; }
+.csharpSVG { margin-left: 100%; margin-top: 90%;}
+.HTML5SVG { margin-left: 100%; margin-top: -20%;}
+.angularSVG { margin-top: -30%; }
+.sqlSVG { margin-top: -200%; margin-left: -30%; }
+.racketSVG { margin-top: -160%; margin-left: -50%; }
+.wpfSVG { margin-left: -50%; margin-top: -20%;}
+.javaSVG { margin-top: -80%; margin-left: -80%; }
+
+.awsSVG { margin-left: 30%; margin-top: 160%; }
+.couchbaseSVG { margin-top: 100%;}
+.gitSVG { margin-left: -30%; margin-top: -110%; transform: rotate(45deg); }
+.inkscapeSVG { margin-left: -10%; margin-top: 30%; }
+.jiraSVG { margin-top: -50%; margin-left: 0%; }
+.mathSVG { margin-top: -10%; margin-left: -10%; }
+.nodeSVG { margin-top: 30%; margin-left: 50%; }
+.vsSVG { margin-top: -10%; margin-left: 30%; }
 
 .contact { padding-bottom: 200px; }
 .contact .row * { color: black; }

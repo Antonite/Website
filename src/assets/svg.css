@@ -1,8 +1,9 @@
-.commentfill { opacity: 0.5; }
-.commentfill:hover { opacity: 1; fill: red; }
-.wrenchfill { opacity: 0.5; }
-.wrenchfill:hover { opacity: 1; fill: blue; }
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
 .manlanguage { opacity: 0.75; }
-.manlanguage:hover { opacity: 1; fill: red; }
+.manlanguage:hover + .textTitle { opacity: 1; fill: red; fill-opacity: 1; }
 .mantool { opacity: 0.75; }
 .mantool:hover { opacity: 1; fill: blue; }
+.textTitle { font-family: 'Jura', serif !important; fill-opacity: 0; }
+/* .languageText {  }
+.toolText {  } */

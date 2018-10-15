@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Jura');
-@import url('https://fonts.googleapis.com/css?family=Fjord+One');
 
 html, body { color: #434242; font-family: 'Jura', sans-serif !important; height: 100%; }
 body { background: white 15px; line-height: 1.64; }
@@ -66,6 +65,9 @@ p.quote a:hover { text-decoration: none; }
 .mathSVG { margin-top: -10%; margin-left: -10%; }
 .nodeSVG { margin-top: 30%; margin-left: 50%; }
 .vsSVG { margin-top: -10%; margin-left: 30%; }
+
+.languageTitle { height: 200%; width:200%; text-align: center; margin-top: -170%; margin-left: -15%; }
+.toolsTitle { height: 180%; width:180%; text-align: center; margin-top: -120%; margin-left: -90%; }
 
 .contact { padding-bottom: 200px; }
 .contact .row * { color: black; }

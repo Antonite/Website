@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Jura');
 
 .manlanguage { opacity: 0.75; }
-.manlanguage:hover + .textTitle { opacity: 1; fill: red; fill-opacity: 1; }
+.manlanguage:hover { opacity: 1; fill: red; }
 .mantool { opacity: 0.75; }
 .mantool:hover { opacity: 1; fill: blue; }
-.textTitle { font-family: 'Jura', serif !important; fill-opacity: 0; }
-/* .languageText {  }
-.toolText {  } */
+.textTitle { font-family: 'Jura', serif !important; fill-opacity: 1; font-weight: 700; }
+.languageText { fill: red; }
+.toolText { fill: blue; }
+
+.gradientMan { visibility: hidden; }

@@ -37,13 +37,13 @@ p.quote a:hover { text-decoration: none; }
 
 .container { max-width: 1280px; padding: 40px 180px; }
 .background-white { background: white; }
-.background-gray { background: rgb(230, 230, 230); }
+.background-gray { background: #f5f5f5 ; }
 
 .profile .row > div { margin-bottom: 20px; }
 .profile .row > div img { width: 100%; max-width: 246px; height: auto; }
 
 .profileImage { border-radius: 10%; }
-.resize { height: 100%; width: 100%; max-width: 200px; max-height: 200px;}
+.resize { height: 100%; width: 100%; }
 
 .skills { margin-bottom: 40px;}
 .skills div { margin: 0px; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px;}
@@ -66,8 +66,8 @@ p.quote a:hover { text-decoration: none; }
 .nodeSVG { margin-top: 30%; margin-left: 50%; }
 .vsSVG { margin-top: -10%; margin-left: 30%; }
 
-.languageTitle { height: 200%; width:200%; text-align: center; margin-top: -170%; margin-left: -15%; }
-.toolsTitle { height: 180%; width:180%; text-align: center; margin-top: -120%; margin-left: -90%; }
+.languageTitle { height: 300%; width:300%; text-align: center; margin-top: -150%; margin-left: -80%; }
+.toolsTitle { height: 300%; width:300%; text-align: center; margin-top: -190%; margin-left: -90%; }
 
 .contact { padding-bottom: 200px; }
 .contact .row * { color: black; }

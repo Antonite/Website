@@ -55,13 +55,12 @@
     <text
        xml:space="preserve"
        x="9.4644651"
-       y="272.14136"
-       id="text7"><tspan
+       y="272.14136"><tspan
          sodipodi:role="line"
          x="9.4644651"
          y="272.14136"
          class="languageText textTitle"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.26458332"
-         id="tspan5">Languages</tspan></text>
+         style="font-size:14.11111069px;line-height:1.25;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.26458332"
+         >Languages</tspan></text>
   </g>
 </svg>

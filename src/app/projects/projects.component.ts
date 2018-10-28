@@ -64,9 +64,6 @@ export class ProjectsComponent implements OnInit {
                     data: dataSeries,
                     valueDecimals: 2
                 }],
-                rangeSelector: {
-                    selected: 1
-                },
                 credits: { 
                     enabled: false
                 },
@@ -76,6 +73,39 @@ export class ProjectsComponent implements OnInit {
                     color: 'black',
                     fontSize: '16px',
                     fontWeight: 'bold'
+                    }
+                },
+
+                chart: {
+                    type: 'spline'
+                },
+                subtitle: {
+                    text: 'Balance over time'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: {
+                        month: '%e. %b',
+                        year: '%b'
+                    },
+                    title: {
+                        text: 'Date'
+                    },
+                    ordinal: false
+                },
+                yAxis: {
+                    title: {
+                        text: 'USDT'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{point.y:.2f} USDT'
+                },
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
                     }
                 }
             };

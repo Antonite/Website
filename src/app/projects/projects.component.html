@@ -41,10 +41,10 @@
         <p class="order side" [ngStyle]="{'color': order.side === 'SELL' ? '#d60000' : '#00d300'}">{{order.side}}</p>
       </div>
       <div class="col-md-4">
-        <p class="order">{{order.qty}}</p>
+        <p class="order">{{order.qty}} BNB</p>
       </div>
       <div class="col-md-4">
-        <p class="order">{{order.price}}</p>
+        <p class="order">${{order.price}}</p>
       </div>
     </div>
   </div>

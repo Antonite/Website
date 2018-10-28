@@ -5,14 +5,14 @@ export const WorkExperiences: Experience[] = [
         name: "Citigroup",
         date: "September 2016 - Current",
         position: "Assistant Vice President",
-        description: "Front end C#/WPF development of PRISM - Citi Equities Risk Management Platform.",
+        description: "Front end C#/WPF development of PRISM - Citi Equities Risk Management Platform. The project's goal is to utilize the latest of .NET to create a modern and performant risk management platform for Citi's front office.",
         location: "Jersey City, NJ"
     },
     {
         name: "Citigroup",
         date: "June 2015 - September 2016",
         position: "Tech Analyst",
-        description: "Directly responsible for advancing the front end development of the industry's leading Citi FX Velocity trading platform. Tasks primarily include design and development of the C#/WPF Velocity platform, as well as various C#/Javascript internal management tools.",
+        description: "Front end C#/WPF development of Citi Velocity - the industry's leading FX trading platform. Velocity serves thousands of internal and external Citi clients. The position also required full stack development of internal management tools.",
         location: "New York, NY"
     },
     {

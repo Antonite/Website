@@ -1,7 +1,8 @@
-<highcharts-chart 
+<highcharts-chart *ngIf="!loading && chartOptions"
   [Highcharts]="Highcharts"
   [options]="chartOptions"
   [constructorType]="chartConstructor"
+  [(update)]="updateData"
 
   style="width: 100%; height: 400px; display: block;"
 ></highcharts-chart>

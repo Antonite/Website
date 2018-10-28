@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit {
         let dataSeries = [];
         for (var key in data) {
             if (data.hasOwnProperty(key)) {
-                dataSeries.push({x: +key, y: data[key].value.totalUSD});
+                dataSeries.push({x: +key, y: Math.round(data[key].value.totalUSD * 100) / 100});
             }
         }
         return dataSeries;
@@ -34,93 +34,26 @@ export class ProjectsComponent implements OnInit {
 
             this.chartOptions = {
                 series: [{
-                    data: dataSeries
+                    name: 'USDT',
+                    type: 'areaspline',
+                    threshold: null,
+                    data: dataSeries,
+                    valueDecimals: 2
                 }],
                 rangeSelector: {
-                    selected: 1,
-                    buttonTheme: {
-                        fill: 'white',
-                        stroke: '#C0C0C8',
-                        'stroke-width': 1,
-                        states: {
-                            select: {
-                                fill: '#D0D0D8'
-                            }
-                        }
-                    }
+                    selected: 1
                 },
                 credits: { 
                     enabled: false
                 },
                 title: {
-                    text: 'AAPL Stock Price',
+                    text: 'Total USDT Balance',
                     style: {
                     color: 'black',
                     fontSize: '16px',
                     fontWeight: 'bold'
                     }
-                },
-        
-                colors: ['#f45b5b', '#8085e9', '#8d4654', '#7798BF', '#aaeeee',
-                    '#ff0066', '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-                chart: {
-                    backgroundColor: null,
-                    style: {
-                        fontFamily: 'Signika, serif'
-                    }
-                },
-                subtitle: {
-                    style: {
-                        color: 'black'
-                    }
-                },
-                tooltip: {
-                    borderWidth: 0
-                },
-                legend: {
-                    itemStyle: {
-                        fontWeight: 'bold',
-                        fontSize: '13px'
-                    }
-                },
-                xAxis: {
-                    labels: {
-                        style: {
-                            color: '#6e6e70'
-                        }
-                    }
-                },
-                yAxis: {
-                    labels: {
-                        style: {
-                            color: '#6e6e70'
-                        }
-                    }
-                },
-                plotOptions: {
-                    series: {
-                        shadow: true
-                    },
-                    candlestick: {
-                        lineColor: '#404048'
-                    },
-                    map: {
-                        shadow: false
-                    }
-                },
-        
-                // Highstock specific
-                navigator: {
-                    xAxis: {
-                        gridLineColor: '#D0D0D8'
-                    }
-                },
-                scrollbar: {
-                    trackBorderColor: '#C0C0C8'
-                },
-        
-                // General
-                background2: '#E0E0E8'
+                }
             };
 
             this.loading = false;

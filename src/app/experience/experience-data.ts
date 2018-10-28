@@ -45,12 +45,5 @@ export const Education: Experience[] = [
         position: "High School",
         description: "Small public school (100 students) for advanced students. A computer science teacher here sparked my passion for programming.",
         location: "Worcester, MA"
-    },
-    {
-        name: "Doherty High",
-        date: "September 2007 - May 2009",
-        position: "High School",
-        description: "I was mostly into math and chess at this time of my life.",
-        location: "Worcester, MA"
     }
 ]

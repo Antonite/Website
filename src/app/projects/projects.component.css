@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
+p { text-align: center; line-height: normal; color: #727878; font-size: 26px; font-family: 'Jura', sans-serif !important; margin: 0px; padding: 10px; }
+.botStatus { height: 100%; text-align: end }
+.activeStatus { height: 100%; text-align: start; color: #00d300; font-weight: 800; }
+.inActiveStatus { height: 100%; text-align: start; color: #d60000; font-weight: 800; }
+.orderHeader { font-size: 20px; border-bottom: 1px solid #7278784d; padding-bottom: 3px; }
+.order { font-size: 20px; }
+.side { font-weight: 600; }
+
+
 .loader-container {
     min-height: 0px;
     max-height: 0px;

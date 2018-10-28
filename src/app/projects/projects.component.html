@@ -10,3 +10,42 @@
 <div class="loader-container" *ngIf="loading && !chartOptions">
   <div class="loader">Loading...</div>
 </div>
+
+<div class="row" *ngIf="!loading && chartOptions">
+  <div class="col-md-6">
+      <div class="row" style="height: 100%; display: flex; align-items: center;">
+          <div class="col-md-6">
+            <p class="botStatus">Bot status:</p>
+          </div>
+          <div class="col-md-6">
+              <p class="activeStatus" *ngIf="status">{{activeStatus}}</p>
+              <p class="inActiveStatus" *ngIf="!status">{{inActiveStatus}}</p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-6">
+    <p>Open orders</p>
+    <div class="row">
+      <div class="col-md-4">
+        <p class="orderHeader">Type</p>
+      </div>
+      <div class="col-md-4">
+        <p class="orderHeader">Quantity</p>
+      </div>
+      <div class="col-md-4">
+        <p class="orderHeader">Price</p>
+      </div>
+    </div>
+    <div class="row" *ngFor="let order of orders">
+      <div class="col-md-4">
+        <p class="order side" [ngStyle]="{'color': order.side === 'SELL' ? '#d60000' : '#00d300'}">{{order.side}}</p>
+      </div>
+      <div class="col-md-4">
+        <p class="order">{{order.qty}}</p>
+      </div>
+      <div class="col-md-4">
+        <p class="order">{{order.price}}</p>
+      </div>
+    </div>
+  </div>
+</div>

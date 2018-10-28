@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts/highstock';
 import { RestService } from '../rest.service';
+import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-projects',
@@ -13,12 +14,16 @@ export class ProjectsComponent implements OnInit {
     chartConstructor = 'stockChart';
     chartOptions: any;
     loading = true;
+    activeStatus = "Active";
+    inActiveStatus = "Idle";
+    status = false;
+    orders = [];
   
     constructor(public rest:RestService) { 
 
     }
 
-    convertData(data){
+    parseData(data){
         let dataSeries = [];
         for (var key in data) {
             if (data.hasOwnProperty(key)) {
@@ -28,9 +33,28 @@ export class ProjectsComponent implements OnInit {
         return dataSeries;
     }
 
+    parseOrders(orders){
+        let dataSeries = [];
+        orders.value.data.forEach(element => {
+            dataSeries.push(
+                {
+                    side: element.side,
+                    qty: Math.round(element.qty* 100) / 100,
+                    price: Math.round(element.price* 100) / 100
+                });
+        });
+        return dataSeries;
+    }
+
     ngOnInit() {
+        this.rest.getOrders().subscribe((orders: {}) => {
+            var orderData = this.parseOrders(orders);
+            this.status = orderData.length > 0;
+            this.orders = orderData;
+        });
+
         this.rest.getData().subscribe((data: {}) => {
-            var dataSeries = this.convertData(data);
+            var dataSeries = this.parseData(data);
 
             this.chartOptions = {
                 series: [{

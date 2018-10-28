@@ -1482,13 +1482,13 @@
       manRight.addEventListener(&quot;mouseout&quot;, mouseOutRight, false);
 
       iconListLeft.forEach(function(icon){
-        icon.addEventListener(&quot;mouseover&quot;, function(){icon.style.opacity=1;}, false);
-        icon.addEventListener(&quot;mouseout&quot;, function(){icon.style.opacity=opacityConst;}, false);
+        icon.addEventListener(&quot;mouseover&quot;, function(){icon.style.opacity=1;languagesText.style.visibility = &quot;visible&quot;;}, false);
+        icon.addEventListener(&quot;mouseout&quot;, function(){icon.style.opacity=opacityConst;languagesText.style.visibility = &quot;hidden&quot;;}, false);
       });
 
       iconListRight.forEach(function(icon){
-        icon.addEventListener(&quot;mouseover&quot;, function(){icon.style.opacity=1;}, false);
-        icon.addEventListener(&quot;mouseout&quot;, function(){icon.style.opacity=opacityConst;}, false);
+        icon.addEventListener(&quot;mouseover&quot;, function(){icon.style.opacity=1;toolsText.style.visibility = &quot;visible&quot;;}, false);
+        icon.addEventListener(&quot;mouseout&quot;, function(){icon.style.opacity=opacityConst;toolsText.style.visibility = &quot;hidden&quot;;}, false);
       });
 
       

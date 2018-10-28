@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts/highstock';
 import { RestService } from '../rest.service';
-import { runInThisContext } from 'vm';
 
 @Component({
   selector: 'app-projects',

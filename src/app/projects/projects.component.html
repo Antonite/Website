@@ -13,15 +13,23 @@
 
 <div class="row" *ngIf="!loading && chartOptions">
   <div class="col-md-6">
-      <div class="row" style="height: 100%; display: flex; align-items: center;">
+      <div class="row" style="height: 50%; display: flex; align-items: flex-end;">
           <div class="col-md-6">
             <p class="botStatus">Bot status:</p>
           </div>
           <div class="col-md-6">
-              <p class="activeStatus" *ngIf="status">{{activeStatus}}</p>
-              <p class="inActiveStatus" *ngIf="!status">{{inActiveStatus}}</p>
+              <p class="activeStatus" *ngIf="status">Active</p>
+              <p class="inActiveStatus" *ngIf="!status">Idle</p>
           </div>
       </div>
+      <div class="row" style="height: 50%; display: flex; align-items: flex-start;">
+        <div class="col-md-6">
+          <p class="botStatus">Current price:</p>
+        </div>
+        <div class="col-md-6">
+            <p class="price">${{lastPrice}}</p>
+        </div>
+    </div>
   </div>
   <div class="col-md-6">
     <p>Open orders</p>

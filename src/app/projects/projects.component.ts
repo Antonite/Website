@@ -13,10 +13,9 @@ export class ProjectsComponent implements OnInit {
     chartConstructor = 'stockChart';
     chartOptions: any;
     loading = true;
-    activeStatus = "Active";
-    inActiveStatus = "Idle";
     status = false;
     orders = [];
+    lastPrice = 0;
   
     constructor(public rest:RestService) { 
 
@@ -24,11 +23,14 @@ export class ProjectsComponent implements OnInit {
 
     parseData(data){
         let dataSeries = [];
+        let lastKey = "";
         for (var key in data) {
             if (data.hasOwnProperty(key)) {
                 dataSeries.push({x: +key, y: Math.round(data[key].value.totalUSD * 100) / 100});
+                lastKey = key;
             }
         }
+        if (data.hasOwnProperty(lastKey)) this.lastPrice = Math.round(data[key].value.BNBBid * 100) / 100;
         return dataSeries;
     }
 
@@ -57,7 +59,7 @@ export class ProjectsComponent implements OnInit {
 
             this.chartOptions = {
                 series: [{
-                    name: 'USDT',
+                    name: 'USD',
                     type: 'areaspline',
                     threshold: null,
                     data: dataSeries,
@@ -67,7 +69,7 @@ export class ProjectsComponent implements OnInit {
                     enabled: false
                 },
                 title: {
-                    text: 'Total USDT Balance',
+                    text: 'Total USD Balance',
                     style: {
                     color: 'black',
                     fontSize: '16px',
@@ -94,11 +96,11 @@ export class ProjectsComponent implements OnInit {
                 },
                 yAxis: {
                     title: {
-                        text: 'USDT'
+                        text: 'USD'
                     }
                 },
                 tooltip: {
-                    pointFormat: '{point.y:.2f} USDT'
+                    pointFormat: '{point.y:.2f} USD'
                 },
                 plotOptions: {
                     spline: {

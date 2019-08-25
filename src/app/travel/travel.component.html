@@ -34,8 +34,23 @@
           <hr style="width: 50%;">
           <br>
           <div *ngFor="let place of country.places" class="place">
-            <h4>{{place.name}}</h4>
-            <p>{{place.description}}</p>
+            <div *ngIf="place.tag === 'right'" class="place-container">
+                <div class="summ">
+                    <h3>{{place.name}}</h3>
+                    <p class="desc">{{place.description}}</p>
+                </div>
+                <img src="{{place.image}}" width="250" height="250">
+            </div>
+            <div *ngIf="place.tag === 'left'" class="place-container">
+                <img class="summ" src="{{place.image}}" width="250" height="250" style="min-width: 250px;">
+                <div>
+                    <h3>{{place.name}}</h3>
+                    <p class="desc">{{place.description}}</p>
+                </div>
+            </div>
+            <br>
+            <hr style="width: 50%;">
+            <br>
           </div>
         </div>
     </div>

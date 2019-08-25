@@ -1,4 +1,13 @@
+
 .travel-container { display: flex; justify-content: space-between; }
 .travel-icon { width: 250px; height: 250px; }
-.travel-icon:hover { border-style: solid; border-width: 2px; border-color: #22A39F; }
+.travel-icon:hover { border-style: solid; border-width: 2px; border-color:#22A39F; }
 p.country-name { text-align: center; color: #727878; font-size: 26px; }
+
+.country {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 { font-weight: 300; color: #22A39F; font-size: 60px; text-align: center; }
+.expTime { color: #22A39F; font-size: 20px; text-align: center; }

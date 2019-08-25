@@ -5,6 +5,7 @@ export const Countries: Country[] = [
     {
         name: "Peru",
         date: "August 2019",
+        plan: "../assets/travel/peru/plan.svg",
         places: [
             new Place ("Lima", "cap", ""),
             new Place ("Paracas", "", ""),

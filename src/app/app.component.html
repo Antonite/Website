@@ -13,7 +13,7 @@
       </a>
   </div>
 
-  <div id="profile" class="background-white">
+  <div id="profile" class="background-gray">
     <div class="profile container">
       <h2>Profile</h2>
       <p class="quote"></p>
@@ -42,7 +42,7 @@
     </div>
   </div>
 
-  <div class="background-gray">
+  <div class="background-white">
     <div class="experience container">
       <h2>Experience</h2>
       <p class="quote"></p>
@@ -51,7 +51,7 @@
     </div>
   </div>
 
-  <div class="background-white">
+  <div class="background-gray">
     <div class="experience container">
       <h2>Education</h2>
       <p class="quote"></p>
@@ -59,6 +59,22 @@
       <app-experience [data]=education></app-experience>
     </div>
   </div>
+
+  <div class="background-white">
+      <div class="container">
+        <h2>Personal Project(s)</h2>
+        <p class="quote">
+          Cryptocurrency market maker bot
+        </p>
+        <hr>
+        <div class="row">
+          <div class="col-md-12">
+            <p>This project is a vwap trading strategy embedded into a Golang bot. Currently, the bot is trading BNB, the value of which is loosely tied to the trading volume of Binance. The bot, as well as the public summary API used by this website, runs on a secure AWS insance. Below is a summary of performance and activity of this bot.</p>
+          </div>
+        </div>
+        <app-projects></app-projects>
+      </div>
+    </div>
 
   <div class="background-gray">
     <div class="container">
@@ -73,22 +89,6 @@
 
   <div class="background-white">
     <div class="container">
-      <h2>Personal Project(s)</h2>
-      <p class="quote">
-        Cryptocurrency market maker bot
-      </p>
-      <hr>
-      <div class="row">
-        <div class="col-md-12">
-          <p>This project is a vwap trading strategy embedded into a Golang bot. Currently, the bot is trading BNB, the value of which is loosely tied to the trading volume of Binance. The bot, as well as the public summary API used by this website, runs on a secure AWS insance. Below is a summary of performance and activity of this bot.</p>
-        </div>
-      </div>
-      <app-projects></app-projects>
-    </div>
-  </div>
-
-  <div class="background-gray">
-    <div class="container">
         <h2>Travel</h2>
         <p class="quote"></p>
         <hr>
@@ -96,7 +96,7 @@
     </div>
   </div>
 
-  <div class="background-white">
+  <div class="background-gray">
     <div class="contact container">
       <h2>Contact</h2>
       <p class="quote"></p>

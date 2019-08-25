@@ -7,18 +7,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { TravelComponent } from './travel/travel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    TravelComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HighchartsChartModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

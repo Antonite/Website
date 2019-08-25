@@ -1,0 +1,30 @@
+<div class="travel">
+  <div class="travel-container">
+    <div class="travel-country">
+        <p class="country-name">Greece</p>
+        <img (click)="travel = 'Greece'" class="travel-icon" src="../assets/travel/greece/santorini.jpg" alt="Santorini" width="250" height="250">
+    </div>
+    <div class="travel-country">
+        <p class="country-name">Thailand</p>
+        <img (click)="travel = 'Thailand'" class="travel-icon" src="../assets/travel/thailand/beach.jpg" alt="Phuket Beach" >
+    </div>
+    <div class="travel-country">
+        <p class="country-name">Peru</p>
+        <img (click)="travel = 'Peru'" class="travel-icon" src="../assets/travel/peru/paracas.jpg" alt="Paracas National Reserve" width="250" height="250">
+    </div>
+  </div>
+  <div *ngFor="let country of data" class="country">
+    <div *ngIf="travel === country.name">
+        <div class="col-md-4">
+            <h4>{{country.name}}</h4>
+            <p class="expTime">
+              {{country.date}}
+            </p>
+          </div>
+          <div *ngFor="let place of country.places" class="place">
+            <!-- <h4>{{place.name}}</h4>
+            <p>{{place.description}}</p> -->
+          </div>
+        </div>
+    </div>
+</div>

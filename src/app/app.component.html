@@ -13,7 +13,7 @@
       </a>
   </div>
 
-  <div id="profile" class="background-gray">
+  <div id="profile" class="background-white">
     <div class="profile container">
       <h2>Profile</h2>
       <p class="quote"></p>
@@ -30,7 +30,7 @@
             </p>
           </div>
         <div class="col-md-4 text-center">
-          <img class="profileImage" src="../assets/profile.jpg" alt="Anton Pashyk" width="250" height="250">
+          <img class="profileImage" src="../assets/profile.jpeg" alt="Anton Pashyk" width="250" height="250">
         </div>
         <div class="col-md-4">
           <h3>About me</h3>
@@ -42,7 +42,7 @@
     </div>
   </div>
 
-  <div class="background-white">
+  <div class="background-gray">
     <div class="experience container">
       <h2>Experience</h2>
       <p class="quote"></p>
@@ -51,12 +51,23 @@
     </div>
   </div>
 
-  <div class="background-gray">
+  <div class="background-white">
     <div class="experience container">
       <h2>Education</h2>
       <p class="quote"></p>
       <hr>
       <app-experience [data]=education></app-experience>
+    </div>
+  </div>
+
+  <div class="background-gray">
+    <div class="container">
+        <h2>Skills</h2>
+        <p class="quote"></p>
+        <hr>
+        <object type="image/svg+xml" data="../assets/skills.svg" class="resize">
+            Skills
+        </object>
     </div>
   </div>
 
@@ -78,12 +89,10 @@
 
   <div class="background-gray">
     <div class="container">
-        <h2>Skills</h2>
+        <h2>Travel</h2>
         <p class="quote"></p>
         <hr>
-        <object type="image/svg+xml" data="../assets/skills.svg" class="resize">
-            Skills
-        </object>
+        <app-travel [data]=countries></app-travel>
     </div>
   </div>
 

@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { WorkExperiences, Education } from './experience/experience-data';
+import { Countries } from './travel/country-data';
 
 
 
@@ -11,6 +12,7 @@ import { WorkExperiences, Education } from './experience/experience-data';
 export class AppComponent {
   workExperience = WorkExperiences;
   education = Education;
+  countries = Countries;
   hideNav = false;
   title = 'antonite';
 

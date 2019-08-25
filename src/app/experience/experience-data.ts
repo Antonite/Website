@@ -3,9 +3,9 @@ import { Experience } from './experience'
 export const WorkExperiences: Experience[] = [
     {
         name: "Caisson",
-        date: "December 2018 - Current",
+        date: "December 2018 - April 2019",
         position: "Software Developer",
-        description: "Developing a system that allows for individuals to take ownership of facts about their identity established by a third party, and share these facts in a verifiable way with interested parties.",
+        description: "Full stack development at Caisson - a startup in the crypto/indentity industry. Caisson is built on Golang and Etherium, creating a system of record for portable, verifiable, and self-managed identities.",
         location: "New York, NY"
     },
     {

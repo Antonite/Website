@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
 
-const endpoint = 'http://18.218.60.102:8081/';
+const endpoint = 'http://13.59.227.113:8080/';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json'
@@ -24,7 +24,7 @@ export class RestService {
   }
 
   getData(): Observable<any> {
-    return this.http.get(endpoint + 'data').pipe(
+    return this.http.get(endpoint + 'balance').pipe(
       map(this.extractData));
   }
 

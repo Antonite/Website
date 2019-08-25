@@ -26,22 +26,22 @@ export class ProjectsComponent implements OnInit {
         let lastKey = "";
         for (var key in data) {
             if (data.hasOwnProperty(key)) {
-                dataSeries.push({x: +key, y: Math.round(data[key].value.totalUSD * 100) / 100});
+                dataSeries.push({x: +(data[key].Timestamp + "000"), y: +data[key].Balance});
                 lastKey = key;
             }
         }
-        if (data.hasOwnProperty(lastKey)) this.lastPrice = Math.round(data[key].value.BNBBid * 100) / 100;
+        if (data.hasOwnProperty(lastKey)) this.lastPrice = Math.round(data[key].Price * 100) / 100;
         return dataSeries;
     }
 
     parseOrders(orders){
         let dataSeries = [];
-        orders.value.data.forEach(element => {
+        orders.forEach(element => {
             dataSeries.push(
                 {
-                    side: element.side,
-                    qty: Math.round(element.qty* 100) / 100,
-                    price: Math.round(element.price* 100) / 100
+                    side: element.Side,
+                    qty: Math.round(element.Qty* 100) / 100,
+                    price: Math.round(element.Price* 100) / 100
                 });
         });
         return dataSeries;

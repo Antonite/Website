@@ -27,9 +27,7 @@
           <p class="expTime">
             {{country.date}}
           </p>
-          <object type="image/svg+xml" data="../assets/travel/peru/plan.svg" class="resize">
-            Plan
-          </object>
+          <img src="{{country.plan}}" class="resize">
           <br>
           <hr style="width: 50%;">
           <br>
@@ -39,7 +37,7 @@
                     <h3>{{place.name}}</h3>
                     <p class="desc">{{place.description}}</p>
                 </div>
-                <img src="{{place.image}}" width="250" height="250">
+                <img src="{{place.image}}" width="250" height="250" style="min-width: 250px;">
             </div>
             <div *ngIf="place.tag === 'left'" class="place-container">
                 <img class="summ" src="{{place.image}}" width="250" height="250" style="min-width: 250px;">

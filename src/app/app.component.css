@@ -77,3 +77,15 @@ p.quote a:hover { text-decoration: none; }
 		padding-bottom: 20px;
 	}
 }
+
+
+@media only screen and (max-width: 800px) {
+
+	.homeBackground {
+		max-height: 100vh;
+		max-width: 100vw;
+	}
+	
+	.container { max-width: 800px; padding: 1em; }
+
+}

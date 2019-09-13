@@ -78,3 +78,13 @@ p { text-align: center; line-height: normal; color: #727878; font-size: 26px; fo
     height: 5em;
   }
 }
+
+@media only screen and (max-width: 800px) {
+
+  .botStatus { text-align: center }
+  .price { text-align: center;  }
+  .activeStatus { text-align: center; }
+  .inActiveStatus { text-align: center; }
+
+}
+

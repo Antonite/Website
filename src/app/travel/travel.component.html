@@ -3,7 +3,7 @@
     <div class="travel-country">
         <p class="country-name">Greece</p>
         <a href="#Greece">
-            <img (click)="travel = 'Greece'" class="travel-icon" src="../assets/travel/greece/santorini.jpg" alt="Santorini" width="250" height="250">
+            <img (click)="travel = 'Greece'" class="travel-icon" src="../assets/travel/greece/santorini.jpg" alt="Santorini">
         </a>
     </div>
     <div class="travel-country">
@@ -15,7 +15,7 @@
     <div class="travel-country">
         <p class="country-name">Peru</p>
         <a href="#Peru">
-            <img (click)="travel = 'Peru'" class="travel-icon" src="../assets/travel/peru/paracas.jpg" alt="Paracas National Reserve" width="250" height="250">
+            <img (click)="travel = 'Peru'" class="travel-icon" src="../assets/travel/peru/paracas.jpg" alt="Paracas National Reserve">
         </a>
     </div>
   </div>
@@ -27,7 +27,7 @@
           <p class="expTime">
             {{country.date}}
           </p>
-          <img src="{{country.plan}}" class="resize">
+          <img src="{{country.plan}}" class="plan">
           <br>
           <hr style="width: 50%;">
           <br>
@@ -37,10 +37,10 @@
                     <h3>{{place.name}}</h3>
                     <p class="desc">{{place.description}}</p>
                 </div>
-                <img src="{{place.image}}" width="250" height="250" style="min-width: 250px;">
+                <img class="travel-icon" src="{{place.image}}">
             </div>
             <div *ngIf="place.tag === 'left'" class="place-container">
-                <img class="summ" src="{{place.image}}" width="250" height="250" style="min-width: 250px;">
+                <img class="travel-icon left-icon" src="{{place.image}}">
                 <div>
                     <h3>{{place.name}}</h3>
                     <p class="desc">{{place.description}}</p>

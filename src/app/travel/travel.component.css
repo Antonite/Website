@@ -1,6 +1,8 @@
 
 .travel-container { display: flex; justify-content: space-between; }
-.travel-icon { width: 250px; height: 250px; }
+.travel-icon { width: 250px; height: 250px; min-width: 250px; min-height: 250px; }
+.left-icon { margin-right: 6em; }
+.summ { margin-right: 6em; }
 .travel-icon:hover { border-style: solid; border-width: 2px; border-color:#22A39F; }
 p.country-name { text-align: center; color: #727878; font-size: 26px; }
 
@@ -14,4 +16,15 @@ h3 { text-align: left; margin-top: 0; padding-top: 0;}
 
 .expTime { color: #22A39F; font-size: 20px; text-align: center; }
 .place-container { display: flex; justify-content: space-between; }
-.summ { margin-right: 6em;}
+
+
+
+@media only screen and (max-width: 800px) {
+    .travel-icon { width: 30vw; height: 30vw; min-width: 30vw; min-height: 30vw; }
+    .left-icon { margin-right: 1em; }
+    .summ { margin-right: 1em; }
+    .desc, h3 { max-width: 60vw; }
+    h3 { font-size: 40px; }
+    .plan { height: 100%; }
+}
+
